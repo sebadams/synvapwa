@@ -4,8 +4,8 @@
   "background_color": "#4b5480",
  "theme_color": "#4b5480",
   "start_url": "./",
-  "display": "standalone",
   "scope": "/synvapwa/",
+  "display": "standalone",  
    "icons": [
   {
    "src": "icon/android-icon-192x192-dunplab-manifest-28522.jpg",
