@@ -442,5 +442,12 @@ $('#action_menu_btn').click(function(){
 });
 	});
 </script>
+<script src="js/sw.js"></script>
+<script> if('serviceWorker' in navigator){
+
+navigator.serviceWorker.register('js/sw.js')
+}
+
+</script>
 </body>
 </html>
