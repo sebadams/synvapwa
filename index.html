@@ -424,6 +424,14 @@
 								<div class="input-group-append">
 									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
 								</div>
+								<form id="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1"></label>
+    <input type="textarea" class="form-control type_msg" placeholder="Type your message..." id="message">
+   
+  </div>
+    <button type="submit" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+</form>
 								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
 								<div class="input-group-append">
 									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
@@ -450,6 +458,16 @@ $('#action_menu_btn').click(function(){
                 navigator.serviceWorker.register('sw.js')
             }
 
+let form=document.getElementById("form");
+let name=document.getElementById("message");
+
+form.addEventListener('submit',(event)=>{
+                event.preventDefault();
+               
+                let storage=name.value;
+                localStorage.setItem('name', storage);})
+
+;
 </script>
 </body>
 </html>
