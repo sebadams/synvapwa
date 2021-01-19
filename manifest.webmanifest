@@ -1,6 +1,6 @@
  {
 "name": "catmail",
-  "short_name": "CM1",
+  "short_name": "CM",
   "background_color": "#4b5480",
  "theme_color": "#4b5480",
   "start_url": "./", 
