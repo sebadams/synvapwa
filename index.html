@@ -454,9 +454,18 @@ $('#action_menu_btn').click(function(){
 </script>
 <script src="sw.js"></script>
  <script>
-            if('serviceWorker' in navigator){
+             if('serviceWorker' in navigator){
                 navigator.serviceWorker.register('sw.js')
             }
+            if (window.caches){
+            caches.open('Synva-PWA').then(
+                cache=>{
+                    cache.addAll([
+                        'index.html',
+                        'sw.js'
+                 ]);
+         })
+        }
 
 let form=document.getElementById("form");
 let name=document.getElementById("message");
