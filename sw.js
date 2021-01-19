@@ -36,3 +36,8 @@ self.addEventListener('fetch', evt=>{
     )
 
 })
+
+
+self.registration.showNotification('notification SW', {
+    body:'Notification depuis mon service workers'
+});
