@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>MessagerieCatmail</title>
+    <title>MessagerieCatmail</title>git
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#4b5480">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -234,8 +234,8 @@
 	}
 	}
     </style>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!DOCTYPE html>
@@ -260,7 +260,8 @@
 					<div class="card-header">
 						
 						<div class="input-group">
-							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<label for="search"></label>
+							<input id="search" type="text" placeholder="Search..." name="" class="form-control search">
 							<div class="input-group-prepend">
 								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
 							</div>
@@ -268,7 +269,8 @@
 					</div>
 					<div class="card-body contacts_body">
 						<ui class="contacts">
-						<li class="active">
+						<ul>
+							<li class="active">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
 									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img">
@@ -328,6 +330,8 @@
 								</div>
 							</div>
 						</li>
+						</ul>
+						
 						</ui>
 					</div>
 					<div class="card-footer"></div>
@@ -430,7 +434,7 @@
 								
 								<form id="form"class="form-group">
   									<div class="form-group-append">
-    									<label for="exampleInputEmail1"></label>
+    									<label for="message"></label>
     									<input type="textarea" class="form-control type_msg" placeholder="Type your message..." id="message">
     								</div>
     									<div class="form-group-append">
