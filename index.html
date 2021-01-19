@@ -413,8 +413,8 @@
 								<div class="img_cont_msg">
 									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
 								</div>
-								<div class="msg_cotainer">
-									Bye, see you
+								<div id="rendu" class="msg_cotainer">
+									
 									<span class="msg_time">9:12 AM, Today</span>
 								</div>
 							</div>
@@ -468,6 +468,7 @@ form.addEventListener('submit',(event)=>{
                 localStorage.setItem('name', storage);})
 
 ;
+document.getElementById("rendu") .innerHTML=localStorage.getItem('name');
 </script>
 </body>
 </html>
